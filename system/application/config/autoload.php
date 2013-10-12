@@ -1,0 +1,116 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/*
+| -------------------------------------------------------------------
+| AUTO-LOADER
+| -------------------------------------------------------------------
+| Este arquivo especifica quais sistemas devem ser carregados por padrão.
+|
+| A fim de manter a estrutura leve quanto possível, apenas os recursos
+| absolutos são carregados por padrão.
+| O banco de dados não está conectado automaticamente uma vez que nenhuma 
+| suposição é feita a respeito de se você pretende usá-lo.  Esse arquivo 
+| permite que você defina quais sistemas você gostaria de carregar com cada
+| solicitação.
+|
+| -------------------------------------------------------------------
+| Instruções
+| -------------------------------------------------------------------
+|
+| Estas são as coisas que você pode carregar automaticamente:
+|
+| 1. Bibliotecas
+| 2. Arquivos de Ajuda
+| 3. Plugins
+| 4. Arquivos de Configação
+| 5. Arquivos de Linguagem
+| 6. Modelos
+|
+*/
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Bibliotecas
+| -------------------------------------------------------------------
+| Estas são as classes localizado no sistema de pasta / bibliotecas
+| ou no sistema/pasta/aplicações/bibliotecas.
+|
+| Prototype:
+|
+|	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
+*/
+
+$autoload['libraries'] = array('database','session','email');
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Arquivos de Ajuda
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['helper'] = array('url', 'file');
+*/
+
+$autoload['helper'] = array('url','form','text','date','security','autenticate','dateutils','browser_detection');
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Plugins
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['plugin'] = array('captcha', 'js_calendar');
+*/
+
+$autoload['plugin'] = array();
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Arquivos de Configurações
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['config'] = array('config1', 'config2');
+|
+| NOTA: Este item deve ser utilizado somente se tiver criado os 
+| arquivos de configuração personalizados. Caso contrário, deixar em branco.
+|
+*/
+
+$autoload['config'] = array();
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Arquivos de Linguagem
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['language'] = array('lang1', 'lang2');
+|
+| NOTA: Não inclua o "_lang" na parte de seu arquivo. por exemplo
+| "codeigniter_lang.php" would be referenced as array('codeigniter');
+|
+*/
+
+$autoload['language'] = array();
+
+
+/*
+| -------------------------------------------------------------------
+|  Auto-load Modelos
+| -------------------------------------------------------------------
+| Prototype:
+|
+|	$autoload['model'] = array('model1', 'model2');
+|
+*/
+
+$autoload['model'] = array('MCategoria','MCusto','MUsuario', 'MParcelas', 'MEntrada', 'MContato');
+
+
+
+/* Fim do arquivo autoload.php */
+/* Localização: ./system/application/config/autoload.php */
